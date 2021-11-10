@@ -6,13 +6,14 @@ session_start();
 
 
 <!-- Mirrored from demo.foxthemes.net/instellohtml/form-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Sep 2021 07:08:38 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Favicon -->
     <link href="assets/images/favicon.png" rel="icon" type="image/png">
-    
+
     <!-- Basic Page Needs
     ================================================== -->
     <title>Instello</title>
@@ -65,15 +66,27 @@ session_start();
                 <p class="mb-2 text-black text-lg"> Register to connect with people!</p>
                 <form action="php/signup.php" method="POST">
                     <div class="flex lg:flex-row flex-col lg:space-x-2">
-                        <input type="text" name = "first_name" placeholder="First Name"  class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
-                        <input type="text" name = "last_name" placeholder="Last Name" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                        <input type="text" name="first_name" placeholder="First Name"
+                            class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800"
+                            style="border: 1px solid #d3d5d8 !important;">
+                        <input type="text" name="last_name" placeholder="Last Name"
+                            class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800"
+                            style="border: 1px solid #d3d5d8 !important;">
                     </div>
-                    <input type="text" name = "date_of_birth" placeholder="Date of Birth" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
-                    <input type="email" name = "email" placeholder="Email" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
-                    <input type="password" name = "password" placeholder="Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
-                    <input type="password" name = "confirm_password" placeholder="Confirm Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <input type="text" name="date_of_birth" placeholder="Date of Birth"
+                        class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800"
+                        style="border: 1px solid #d3d5d8 !important;">
+                    <input type="email" name="email" placeholder="Email"
+                        class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800"
+                        style="border: 1px solid #d3d5d8 !important;">
+                    <input type="password" name="password" placeholder="Password"
+                        class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800"
+                        style="border: 1px solid #d3d5d8 !important;">
+                    <input type="password" name="confirm_password" placeholder="Confirm Password"
+                        class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800"
+                        style="border: 1px solid #d3d5d8 !important;">
                     <div id="error" class="alert alert-light" role="alert">
-                            <?php
+                        <?php
                             if(isset($_SESSION['first_name_error']))
                             echo nl2br($_SESSION['first_name_error']."\n");
                             if(isset($_SESSION['last_name_error']))
@@ -92,18 +105,21 @@ session_start();
                             echo nl2br($_SESSION['error_email']."\n");
                             ?>
                     </div>
-                    <button type="submit" class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full">Sign Up</button>
+                    <button type="submit"
+                        class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full">Sign
+                        Up</button>
                     <div class="text-center mt-5 space-x-2">
                         <p class="text-base"> Do you have an account? <a href="index.php"> Login </a></p>
                     </div>
                 </form>
             </div>
         </div>
-        
+
         <!-- Footer -->
 
         <div class="lg:mb-5 py-3 uk-link-reset">
-            <div class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
+            <div
+                class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
                 <p class="capitalize">Instello By Waseem Issa</p>
             </div>
         </div>
@@ -124,4 +140,5 @@ session_start();
 
 
 <!-- Mirrored from demo.foxthemes.net/instellohtml/form-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Sep 2021 07:08:38 GMT -->
+
 </html>

@@ -11,9 +11,8 @@ if($_SESSION['status']!="Active")
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <!-- Mirrored from demo.foxthemes.net/instellohtml/feed.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Sep 2021 07:06:25 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,17 +41,18 @@ if($_SESSION['status']!="Active")
 
 <body>
 
-
     <div id="wrapper">
 
         <div class="sidebar">
-            <div class="sidebar_header border-b border-gray-200 from-gray-100 to-gray-50 bg-gradient-to-t  uk-visible@s"> 
+            <div
+                class="sidebar_header border-b border-gray-200 from-gray-100 to-gray-50 bg-gradient-to-t  uk-visible@s">
                 <a href="#">
                     <img src="assets/images/logo.png">
                     <img src="assets/images/logo-light.png" class="logo_inverse">
                 </a>
                 <!-- btn night mode -->
-                <a href="#" id="night-mode" class="btn-night-mode" data-tippy-placement="left" title="Switch to dark mode"></a>
+                <a href="#" id="night-mode" class="btn-night-mode" data-tippy-placement="left"
+                    title="Switch to dark mode"></a>
             </div>
             <div class="border-b border-gray-20 flex justify-between items-center p-3 pl-5 relative uk-hidden@s">
                 <h3 class="text-xl"> Navigation </h3>
@@ -65,7 +65,8 @@ if($_SESSION['status']!="Active")
                         <img src="assets/images/<?php echo $_SESSION['profile_picture_url']; ?>"
                             class="bg-gray-200 border-4 border-white rounded-full w-full h-full">
                     </div>
-                    <a href="" id="name_a" class="text-xl font-medium capitalize mt-4 uk-link-reset"> <?php echo $_SESSION['first_name']." ".$_SESSION['last_name']; ?>
+                    <a href="" id="name_a" class="text-xl font-medium capitalize mt-4 uk-link-reset">
+                        <?php echo $_SESSION['first_name']." ".$_SESSION['last_name']; ?>
                     </a>
                     <div class="flex justify-around w-full items-center text-center uk-link-reset text-gray-800 mt-6">
                         <div>
@@ -115,7 +116,7 @@ if($_SESSION['status']!="Active")
                             </svg>
                             <span> Logout </span> </a>
                     </li>
-                    <button hidden id="user_id_button" value = "<?php echo $_SESSION['user_id']; ?>"></button>
+                    <button hidden id="user_id_button" value="<?php echo $_SESSION['user_id']; ?>"></button>
                 </ul>
             </div>
         </div>
@@ -140,8 +141,8 @@ if($_SESSION['status']!="Active")
 
                     </div>
                     <div class="right-side lg:pr-4">
-                        
-                         <!-- Notification -->
+
+                        <!-- Notification -->
 
                         <a href="#" class="header-links-item">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -163,7 +164,8 @@ if($_SESSION['status']!="Active")
                         <!-- profile -->
 
                         <a href="#">
-                            <img src="assets/images/<?php echo $_SESSION['profile_picture_url']; ?>" class="header-avatar" alt="">
+                            <img src="assets/images/<?php echo $_SESSION['profile_picture_url']; ?>"
+                                class="header-avatar" alt="">
                         </a>
                         <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
                             <ul>
@@ -178,81 +180,91 @@ if($_SESSION['status']!="Active")
 
             <div class="container m-auto">
 
-            <div class="grid lg:grid-cols-3 mt-12 gap-8">
+                <div class="grid lg:grid-cols-3 mt-12 gap-8">
                     <div>
                         <h3 class="text-xl mb-2"> Edit Your Information</h3>
                         <p>If you are willing to make a change, please, refill ALL the fields in this form.</p>
                     </div>
                     <div class="bg-white rounded-md lg:shadow-lg shadow col-span-2">
-    
-                       <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
-                           <div>
-                               <label for=""> First name</label>
-                               <input type="text" name="edit_fname" id="edit_fname" placeholder="Your first name.." class="shadow-none bg-gray-100 edit_fname"></input>
-                           </div>
-                           <div>
-                               <label for=""> Last name</label>
-                               <input type="text" name="edit_lname" id="edit_lname" placeholder="Your last name.." class="shadow-none bg-gray-100 edit_lname"></input>
+
+                        <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
+                            <div>
+                                <label for=""> First name</label>
+                                <input type="text" name="edit_fname" id="edit_fname" placeholder="Your first name.."
+                                    class="shadow-none bg-gray-100 edit_fname"></input>
+                            </div>
+                            <div>
+                                <label for=""> Last name</label>
+                                <input type="text" name="edit_lname" id="edit_lname" placeholder="Your last name.."
+                                    class="shadow-none bg-gray-100 edit_lname"></input>
                             </div>
                             <div class="col-span-2">
                                 <label for=""> Date of Birth</label>
-                                <input type="text" name="edit_dob" id="edit_dob" placeholder="Your date of birth.." class="shadow-none bg-gray-100 edit_dob"></input>
+                                <input type="text" name="edit_dob" id="edit_dob" placeholder="Your date of birth.."
+                                    class="shadow-none bg-gray-100 edit_dob"></input>
                             </div>
                             <div class="col-span-2">
                                 <label for=""> Email</label>
-                                <input type="text" name="edit_email" id="edit_email" placeholder="Your email.." class="shadow-none bg-gray-100 edit_email"></input>
+                                <input type="text" name="edit_email" id="edit_email" placeholder="Your email.."
+                                    class="shadow-none bg-gray-100 edit_email"></input>
                             </div>
 
 
 
-                       </div> 
-    
-                       <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
-                           <button type="button" onClick="editProfile();" id="save_edit_profile" class="button bg-blue-700"> Save </button>
-                       </div>
+                        </div>
 
-                       
-    
+                        <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
+                            <button type="button" onClick="editProfile();" id="save_edit_profile"
+                                class="button bg-blue-700"> Save </button>
+                        </div>
+
+
+
                     </div>
 
                 </div>
-                
+
                 <div class="grid lg:grid-cols-3 mt-12 gap-8">
                     <div>
                         <h3 class="text-xl mb-2"> Edit Password</h3>
                         <p> Please, enter your current password followed by the new one and it's confirmation.</p>
                     </div>
                     <div class="bg-white rounded-md lg:shadow-lg shadow col-span-2">
-    
-                       <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
+
+                        <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
                             <div class="col-span-2">
                                 <label for=""> Current Password</label>
-                                <input type="password" name="password_edit" id="password_edit" placeholder="Your current password.." class="shadow-none bg-gray-100 password_edit">
+                                <input type="password" name="password_edit" id="password_edit"
+                                    placeholder="Your current password.." class="shadow-none bg-gray-100 password_edit">
                             </div>
                             <div class="col-span-2">
                                 <label for=""> New Password</label>
-                                <input type="password" name="new_password_edit" id="new_password_edit" placeholder="Your new password.." class="shadow-none bg-gray-100 new_password_edit">
+                                <input type="password" name="new_password_edit" id="new_password_edit"
+                                    placeholder="Your new password.." class="shadow-none bg-gray-100 new_password_edit">
                             </div>
                             <div class="col-span-2">
                                 <label for=""> Confirm New Password</label>
-                                <input type="password" name="new_password_confirm_edit" id="new_password_confirm_edit" placeholder="New password confirmation" class="shadow-none bg-gray-100 new_password_confirm_edit">
+                                <input type="password" name="new_password_confirm_edit" id="new_password_confirm_edit"
+                                    placeholder="New password confirmation"
+                                    class="shadow-none bg-gray-100 new_password_confirm_edit">
                             </div>
 
 
 
 
-                       </div> 
-    
-                       <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
-                           <button type="button" onClick="editPassword();" id="save_edit_password" class="button bg-blue-700"> Save </button>
-                       </div>
+                        </div>
 
-                       
-    
+                        <div class="bg-gray-10 p-6 pt-0 flex justify-end space-x-3">
+                            <button type="button" onClick="editPassword();" id="save_edit_password"
+                                class="button bg-blue-700"> Save </button>
+                        </div>
+
+
+
                     </div>
 
-                </div>  
-          
+                </div>
+
 
             </div>
 
@@ -261,50 +273,45 @@ if($_SESSION['status']!="Active")
     </div>
 
 
-
-
-
-
     <script>
-        
-        (function (window, document, undefined) {
-            'use strict';
-            if (!('localStorage' in window)) return;
-            var nightMode = localStorage.getItem('gmtNightMode');
-            if (nightMode) {
-                document.documentElement.className += ' dark';
+    (function(window, document, undefined) {
+        'use strict';
+        if (!('localStorage' in window)) return;
+        var nightMode = localStorage.getItem('gmtNightMode');
+        if (nightMode) {
+            document.documentElement.className += ' dark';
+        }
+    })(window, document);
+
+
+    (function(window, document, undefined) {
+
+        'use strict';
+
+        // Feature test
+        if (!('localStorage' in window)) return;
+
+        // Get our newly insert toggle
+        var nightMode = document.querySelector('#night-mode');
+        if (!nightMode) return;
+
+        // When clicked, toggle night mode on or off
+        nightMode.addEventListener('click', function(event) {
+            event.preventDefault();
+            document.documentElement.classList.toggle('dark');
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('gmtNightMode', true);
+                return;
             }
-        })(window, document);
-    
-    
-        (function (window, document, undefined) {
-    
-            'use strict';
-    
-            // Feature test
-            if (!('localStorage' in window)) return;
-    
-            // Get our newly insert toggle
-            var nightMode = document.querySelector('#night-mode');
-            if (!nightMode) return;
-    
-            // When clicked, toggle night mode on or off
-            nightMode.addEventListener('click', function (event) {
-                event.preventDefault();
-                document.documentElement.classList.toggle('dark');
-                if (document.documentElement.classList.contains('dark')) {
-                    localStorage.setItem('gmtNightMode', true);
-                    return;
-                }
-                localStorage.removeItem('gmtNightMode');
-            }, false);
-    
-        })(window, document);
+            localStorage.removeItem('gmtNightMode');
+        }, false);
+
+    })(window, document);
     </script>
 
- <!-- Scripts
+    <!-- Scripts
     ================================================== -->
-    <script src="assets/js/tippy.all.min.js"></script>  
+    <script src="assets/js/tippy.all.min.js"></script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/uikit.js"></script>
     <script src="assets/js/simplebar.js"></script>
@@ -317,4 +324,5 @@ if($_SESSION['status']!="Active")
 
 
 <!-- Mirrored from demo.foxthemes.net/instellohtml/feed.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Sep 2021 07:06:56 GMT -->
+
 </html>

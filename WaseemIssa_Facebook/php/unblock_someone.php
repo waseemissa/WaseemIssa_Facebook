@@ -18,6 +18,4 @@ $response["id"] = $blocked_user_id;
 $response_json = json_encode($response, JSON_PRETTY_PRINT);
 echo $response_json; 
 
-
-
 ?>

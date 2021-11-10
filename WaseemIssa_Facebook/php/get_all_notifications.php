@@ -25,3 +25,5 @@ while($notification = $result->fetch_assoc()){
 
 $notifications_json = json_encode($notifications_array, JSON_PRETTY_PRINT);
 echo $notifications_json;
+
+?>

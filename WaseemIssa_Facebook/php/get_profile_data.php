@@ -21,6 +21,4 @@ while($row = $result->fetch_assoc()){
 $profile_json = json_encode($profile, JSON_PRETTY_PRINT);
 echo $profile_json;
 
-
-
 ?>

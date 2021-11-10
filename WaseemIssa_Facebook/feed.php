@@ -42,7 +42,6 @@ if($_SESSION['status']!="Active")
 
 <body>
 
-
     <div id="wrapper">
 
         <div class="sidebar">
@@ -195,9 +194,6 @@ if($_SESSION['status']!="Active")
                     <!-- left sidebar-->
                     <div id="search_results_div" class="space-y-5 flex-shrink-0 lg:w-7/12">
 
-
-
-
                     </div>
 
                     <!-- right sidebar-->
@@ -232,11 +228,6 @@ if($_SESSION['status']!="Active")
         </div>
 
     </div>
-
-
-
-
-
 
     <script>
         
