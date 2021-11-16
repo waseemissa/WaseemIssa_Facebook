@@ -6,12 +6,12 @@ It is a social app like Facebook where a person can find people, send invitation
 
 **** Signup page ****
 You can create an account following a criteria for entered data that if not satisfied will forward you to the signup page with errors to correct.
-after signup you get directed to login page
+After signup you get directed to login page
 
 **** login page ****
 
-You can enter an email and password to login. if your email is in the database a div of role alert will apear to inform you of that or give you an error otherwise.
-Entering wrong credentials will forward you to the login page with the errors you've made.
+You can enter an email and password to login. If your email is in the database a div of role alert will apear to inform you of that or give you an error otherwise.
+Entering wrong credentials will forward you to the login page with the errors displayed.
 
 
 **** Feed ****
